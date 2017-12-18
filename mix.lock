@@ -1,11 +1,12 @@
-%{"earmark": {:hex, :earmark, "0.1.10"},
-  "ex_doc": {:hex, :ex_doc, "0.6.1"},
+%{"earmark": {:hex, :earmark, "0.1.10", "9e96e61f20fad2e32084ff87e53318397b674a3957ee24b0af18489577e024f1", [], [], "hexpm"},
+  "ex_doc": {:hex, :ex_doc, "0.6.1", "4b722f73acb92be541376fd7fa1f33393bb04199dc11a585370aad584a4a3f8b", [], [], "hexpm"},
   "hoedown": {:git, "git://github.com/hoedown/hoedown.git", "34d28b5f1af41a8879985f2550ddcaa54c4e432b", []},
-  "httpotion": {:hex, :httpotion, "2.1.0"},
+  "httpotion": {:hex, :httpotion, "2.1.0", "3fe84fbd13d4560c2514da656d022b1191a079178ee4992d245fc3c33c01ee18", [], [], "hexpm"},
   "ibrowse": {:git, "https://github.com/cmullaparthi/ibrowse.git", "ea3305d21f37eced4fac290f64b068e56df7de80", [tag: "v4.1.2"]},
   "jazz": {:hex, :jazz, "0.2.1"},
   "jsonex": {:git, "git://github.com/marcelog/jsonex.git", "82e6c416eed5e791073427bf3079d7ab7b85a1e1", []},
   "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "507fa4c41db33c81e925ab53f4d789d234aaff2f", []},
   "markdown": {:git, "git://github.com/devinus/markdown.git", "a428908a6dd88f351775d1d3da530a1a2aa0d6cb", []},
   "meck": {:git, "https://github.com/eproxus/meck.git", "dde759050eff19a1a80fd854d7375174b191665d", [tag: "0.8.2"]},
-  "mock": {:git, "https://github.com/jjh42/mock.git", "275109db347caf3449b6d123bd4da720fb08b28e", []}}
+  "mock": {:git, "https://github.com/jjh42/mock.git", "275109db347caf3449b6d123bd4da720fb08b28e", []},
+  "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [], [], "hexpm"}}

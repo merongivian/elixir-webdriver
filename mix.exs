@@ -21,7 +21,7 @@ defmodule WebDriver.Mixfile do
     [
       mod: { WebDriver, []},
       registered:   [ :webdriver ],
-      applications: [ :httpotion, :jazz ],
+      applications: [ :httpotion ],
       env: [ debug_browser: false ]
     ]
   end
@@ -32,7 +32,7 @@ defmodule WebDriver.Mixfile do
     [
       {:ibrowse,   github: "cmullaparthi/ibrowse", tag: "v4.1.2"},
       {:httpotion, "~> 2.1"},
-      {:jazz,      "~> 0.2.1"},
+      {:poison, "~> 3.1"},
       {:mock,      github: "jjh42/mock", only: :test},
       {:earmark,   "~>0.1.10", only: :dev},
       {:ex_doc,    "~>0.6", only: :dev}

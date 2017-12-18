@@ -2,7 +2,6 @@ Code.require_file "../test_helper.exs", __DIR__
 
 defmodule WebDriverProtocolTest do
   use ExUnit.Case, async: true
-  use Jazz
   import Mock
 
   alias WebDriver.Protocol
@@ -437,19 +436,19 @@ defmodule WebDriverProtocolTest do
 
   def post(_url, options) do
     body = Keyword.get(options, :body)
-    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{JSON.encode! body}}",
+    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{Poison.encode! body}}",
                        status_code: 201, headers: []}
   end
 
   # Mocks a response to a GET request. Just returns an HTTPotion Response
   def get(_url, _options) do
-    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{JSON.encode!(%{})}}",
+    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{Poison.encode!(%{})}}",
                        status_code: 200, headers: [] }
   end
 
   # Mocks a response to a DELETE request. Just returns an HTTPotion Response
   def delete(_url, _options) do
-    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{JSON.encode!(%{})}}",
+    %HTTPotion.Response{ body: "{\"sessionId\": \"1234\", \"status\": 0, \"value\": #{Poison.encode!(%{})}}",
                        status_code: 204, headers: [] }
   end
 
@@ -459,7 +458,7 @@ defmodule WebDriverProtocolTest do
 
   defp assert_post path, body do
     # Jazz shuffles map keys around.
-    b = JSON.decode!(body) |> JSON.encode!
+    b = Poison.decode!(body) |> Poison.encode!
     assert called HTTPotion.post("http://127.0.0.1:8080#{path}", :_)
   end
 
