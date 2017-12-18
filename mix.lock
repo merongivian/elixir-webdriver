@@ -2,7 +2,7 @@
   "ex_doc": {:hex, :ex_doc, "0.6.1", "4b722f73acb92be541376fd7fa1f33393bb04199dc11a585370aad584a4a3f8b", [], [], "hexpm"},
   "hoedown": {:git, "git://github.com/hoedown/hoedown.git", "34d28b5f1af41a8879985f2550ddcaa54c4e432b", []},
   "httpotion": {:hex, :httpotion, "2.1.0", "3fe84fbd13d4560c2514da656d022b1191a079178ee4992d245fc3c33c01ee18", [], [], "hexpm"},
-  "ibrowse": {:git, "https://github.com/VerKnowSys/ibrowse.git", "fd81d44182507c23445ed720df8c30e2e8da9d9b", [tag: "v4.2"]},
+  "ibrowse": {:hex, :ibrowse, "4.4.0", "2d923325efe0d2cb09b9c6a047b2835a5eda69d8a47ed6ff8bc03628b764e991", [:rebar3], [], "hexpm"},
   "jazz": {:hex, :jazz, "0.2.1"},
   "jsonex": {:git, "git://github.com/marcelog/jsonex.git", "82e6c416eed5e791073427bf3079d7ab7b85a1e1", []},
   "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "507fa4c41db33c81e925ab53f4d789d234aaff2f", []},
